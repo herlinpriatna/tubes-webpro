@@ -1,0 +1,35 @@
+
+/*Import poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background-color:  rgba(255, 255, 255, 1)!important;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    font-family:  'Poppins', sans-serif !important;
+    font-size: 24px !important;
+    
+  }
+  
+  html {
+    height: -webkit-fill-available;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+.nav-item {
+  margin-top: 13%;
+}
+
+h2 {
+  font-weight: bold;
+}
+
