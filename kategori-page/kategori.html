@@ -3,84 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kategori.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <title>kategori</title>
 </head>
 <body>
     <!-- navigasi bar -->
-    <nav class="justify-content-between navbar p-3" style="background-color: #3570D6;">
-        <div class="container-fluid">
-            <!-- setting tulisan lapak telu dan logo -->
-            <a class="navbar-brand fw-bold px-4" href="#" style="color: white; font-family: sans-serif;">
-                <img src="img/group-296.png" alt="Logo" width="60" >
-                LAPAK TEL-U
-            </a>
-            <!-- setting search bar -->
-            <form class=" position-absolute top-50 start-50 translate-middle " role="search">
-                <div class="input-group" style="width: 400px;">
-                    <button class="input-group-text"><img src="img/material-symbols-search.png" alt=""></button>
-                    <input type="text" class="form-control" placeholder="Cari" aria-label="Username">
-                </div>
-            </form>
-            <!-- setting upload dan masuk -->
-            <div class="button px-5">
-                <a class="fw-bold px-5" href="#" style="color: white; text-decoration: none;">
-                    <img src="img/lucide-upload.svg">
-                    Upload
+    <div class="fix">
+        <nav class="navbar justify-content-between p-3">
+            <div class="container-fluid"> 
+                <!-- Logo lapak telu -->
+                <a class="navbar-brand fw-bold  " href="#" id="lapak-telu">
+                    <img src="img/group-296.png" alt="" width="60">
+                    LAPAK TEL-U
                 </a>
-                <button class="btn btn-light fw-bold" style="padding-inline: 30px; color: #3570D6; font-family: sans-serif;">Masuk</button>
+                <!-- search bar -->
+                <form role="search">
+                    <div class="input-group" id="search">
+                        <button class="input-group-text"><img src="img/material-symbols-search.png" alt=""></button>
+                        <input class="form-control" type="text" placeholder="Cari">
+                    </div>
+                </form>
+                <!-- upload dan masuk -->
+                <div>
+                    <a href="" id="upload">
+                        <img src="img/lucide-upload.svg" alt="">
+                        Upload
+                    </a>
+                    <button class="btn btn-light" id="masuk">Masuk</button>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- mengatur nama kategori dan "lihat semua" -->
-    <div class="container-fluid position-relative">
-        <div class="position-absolute top-0 start-0" style="padding: 50px;">
-            <h3 class="fw-bold">Pakaian Wanita</h3>
-        </div >
-        <div class="position-absolute top-0 end-0" style="padding: 50px;">
-            <a class="fw-medium" href="#" style="font-size: 22px; text-decoration: none; color: #3570D6; ">
-                Lihat Semua
-            </a>
-        </div>
+        </nav>
     </div>
-    <!-- mengatur placeholder -->
-    <section class="justify-content-center card-group" style="padding-top: 100px;">
-        <div class="produk-item">
-            <div class="card m-3" style="width: 18rem">
-              <img src="img/rectangle-372.png" class="card-img-top"/>
-              <div class="card-body">
-                <a class="card-title" style="font-size: 20px; text-decoration: none;">Sepatu Adidas</a>
-                <p class="card-text fw-bold">Rp250.000</p>
-              </div>
+
+    <!-- nama dan kategori utama-->
+    <div class="d-flex justify-content-between" id="nama-kategori-awal">
+        <h3 class="fw-bold">
+            Pakaian Wanita
+        </h3>
+        <a class="lihat-semua" href="">
+            Lihat Semua
+        </a>
+    </div>
+
+    <!-- place holder card-->
+    <div class="slider">
+        <section class="posisition" id="scroll-horizontal">
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                <img src="img/rectangle-372.png" class="card-img-top"/>
+                <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">Pakaian Wanita</a>
+                    <p class="card-text fw-bold">Rp250.000</p>
+                </div>
+                </div>
             </div>
-        </div>
-        <div class="produk-item">
-            <div class="card m-3" style="width: 18rem">
-              <img src="img/rectangle-379.png" class="card-img-top"/>
-              <div class="card-body">
-                <a class="card-title" style="font-size: 20px; text-decoration: none;">Sepatu Adidas</a>
-                <p class="card-text fw-bold">Rp250.000</p>
-              </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                  <img src="img/rectangle-372.png" class="card-img-top"/>
+                  <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">Pakaian Wanita</a>
+                    <p class="card-text fw-bold">Rp250.000</p>
+                  </div>
+                </div>
             </div>
-        </div>  
-        <div class="produk-item">
-            <div class="card m-3" style="width: 18rem">
-              <img src="img/rectangle-382.png" class="card-img-top"/>
-              <div class="card-body">
-                <a class="card-title" style="font-size: 20px; text-decoration: none;">Sepatu Adidas</a>
-                <p class="card-text fw-bold">Rp250.000</p>
-              </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                  <img src="img/rectangle-372.png" class="card-img-top"/>
+                  <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">Pakaian Wanita</a>
+                    <p class="card-text fw-bold">Rp250.000</p>
+                  </div>
+                </div>
             </div>
-        </div>  
-        <div class="produk-item">
-            <div class="card m-3" style="width: 18rem">
-              <img src="img/rectangle-61.png" class="card-img-top"/>
-              <div class="card-body">
-                <a class="card-title" style="font-size: 20px; text-decoration: none;">Sepatu Adidas</a>
-                <p class="card-text fw-bold">Rp250.000</p>
-              </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                  <img src="img/rectangle-372.png" class="card-img-top"/>
+                  <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">Pakaian Wanita</a>
+                    <p class="card-text fw-bold">Rp250.000</p>
+                  </div>
+                </div>
             </div>
-        </div>         
-    </section>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                  <img src="img/rectangle-372.png" class="card-img-top"/>
+                  <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">Pakaian Wanita</a>
+                    <p class="card-text fw-bold">Rp250.000</p>
+                  </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                  <img src="img/rectangle-372.png" class="card-img-top"/>
+                  <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">Pakaian Wanita</a>
+                    <p class="card-text fw-bold">Rp250.000</p>
+                  </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                  <img src="img/rectangle-372.png" class="card-img-top"/>
+                  <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">Pakaian Wanita</a>
+                    <p class="card-text fw-bold">Rp250.000</p>
+                  </div>
+                </div>
+            </div>
+        </section>   
+    </div>
+
+    <!-- nama dan kategori -->
+    <div class="d-flex justify-content-between" id="nama-kategori">
+        <h3 class="fw-bold">
+            Gadget
+        </h3>
+        <a class="lihat-semua" href="">
+            Lihat Semua
+        </a>
+    </div>
+    <!-- place holder card -->
+    <div class="slider">
+        <section class="" id="scroll-horizontal">
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                <img src="img/rectangle-379.png" class="card-img-top"/>
+                <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">IPhone 8S</a>
+                    <p class="card-text fw-bold">Rp2.500.000</p>
+                </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                <img src="img/rectangle-379.png" class="card-img-top"/>
+                <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">IPhone 8S</a>
+                    <p class="card-text fw-bold">Rp2.500.000</p>
+                </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                <img src="img/rectangle-379.png" class="card-img-top"/>
+                <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">IPhone 8S</a>
+                    <p class="card-text fw-bold">Rp2.500.000</p>
+                </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                <img src="img/rectangle-379.png" class="card-img-top"/>
+                <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">IPhone 8S</a>
+                    <p class="card-text fw-bold">Rp2.500.000</p>
+                </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                <img src="img/rectangle-379.png" class="card-img-top"/>
+                <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">IPhone 8S</a>
+                    <p class="card-text fw-bold">Rp2.500.000</p>
+                </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                <img src="img/rectangle-379.png" class="card-img-top"/>
+                <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">IPhone 8S</a>
+                    <p class="card-text fw-bold">Rp2.500.000</p>
+                </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                <img src="img/rectangle-379.png" class="card-img-top"/>
+                <div class="card-body">
+                    <a class="card-title" style="font-size: 20px; text-decoration: none;">IPhone 8S</a>
+                    <p class="card-text fw-bold">Rp2.500.000</p>
+                </div>
+                </div>
+            </div>
+        </section>   
+    </div>
+
+    <!-- nama dan kategori -->
+    <div class="d-flex justify-content-between" id="nama-kategori">
+        <h3 class="fw-bold">
+            Pakaian Wanita
+        </h3>
+        <a class="lihat-semua" href="">
+            Lihat Semua
+        </a>
+    </div>
+    <!-- place holder card-->
+    <div class="slider">
+        <section class="" id="scroll-horizontal">
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                    <img src="img/rectangle-382.png" class="card-img-top"/>
+                    <div class="card-body">
+                        <a class="card-title" style="font-size: 20px; text-decoration: none;">Sepatu Adios</a>
+                        <p class="card-text fw-bold">Rp250.000</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                    <img src="img/rectangle-382.png" class="card-img-top"/>
+                    <div class="card-body">
+                        <a class="card-title" style="font-size: 20px; text-decoration: none;">Sepatu Adios</a>
+                        <p class="card-text fw-bold">Rp250.000</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                    <img src="img/rectangle-382.png" class="card-img-top"/>
+                    <div class="card-body">
+                        <a class="card-title" style="font-size: 20px; text-decoration: none;">Sepatu Adios</a>
+                        <p class="card-text fw-bold">Rp250.000</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                    <img src="img/rectangle-382.png" class="card-img-top"/>
+                    <div class="card-body">
+                        <a class="card-title" style="font-size: 20px; text-decoration: none;">Sepatu Adios</a>
+                        <p class="card-text fw-bold">Rp250.000</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                    <img src="img/rectangle-382.png" class="card-img-top"/>
+                    <div class="card-body">
+                        <a class="card-title" style="font-size: 20px; text-decoration: none;">Sepatu Adios</a>
+                        <p class="card-text fw-bold">Rp250.000</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                    <img src="img/rectangle-382.png" class="card-img-top"/>
+                    <div class="card-body">
+                        <a class="card-title" style="font-size: 20px; text-decoration: none;">Sepatu Adios</a>
+                        <p class="card-text fw-bold">Rp250.000</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="produk-item">
+                <div class="card m-3" style="width: 15rem">
+                    <img src="img/rectangle-382.png" class="card-img-top"/>
+                    <div class="card-body">
+                        <a class="card-title" style="font-size: 20px; text-decoration: none;">Sepatu Adios</a>
+                        <p class="card-text fw-bold">Rp250.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </div>
 
 </body>
 </html>

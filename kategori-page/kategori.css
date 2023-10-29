@@ -1,0 +1,101 @@
+/* navigasi */
+.fix{
+    overflow: hidden;
+    position: fixed;
+    background-color: #3570D6;
+
+    top: 0;
+    width: 100%;
+
+    z-index: 100;
+}
+
+.fix a{
+    float: left;
+    display: block;
+    background-color: #3570D6;
+
+}
+
+.fix a:hover{
+    background-color: #3570D6;
+
+}
+
+.navbar{
+    background-color: #3570D6;
+}
+
+
+#lapak-telu{
+    color: white; 
+    font-family: sans-serif;
+}
+
+#search{
+    width: 350px;
+}
+
+#upload{
+    color: white;
+    text-decoration: none;
+}
+
+#upload{
+    padding-inline: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#masuk{
+    padding-inline: 30px;
+    color: #3570D6;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.lihat-semua{
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* body */
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* position: relative;
+    left: 50px; */
+}
+
+#nama-kategori-awal{
+    padding-top: 150px;
+    padding-inline: 50px;
+}
+
+#nama-kategori{
+    padding-top: 50px;
+    padding-inline: 50px;
+}
+
+#scroll-horizontal{
+    border: 1px black;
+    max-width: 1350px;
+    display: flex;
+    overflow-x: auto;
+}
+
+/* #scroll-horizontal::-webkit-scrollbar{
+    width: 0;
+} */
+
+#sroll-horizontal .item{
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 2px;
+}
