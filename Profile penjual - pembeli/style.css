@@ -1,0 +1,95 @@
+
+/*Import poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* navigasi */
+.fix{
+  overflow: hidden;
+  position: fixed;
+  background-color: #3570D6;
+
+  top: 0;
+  width: 100%;
+
+  z-index: 100;
+}
+
+.fix a{
+  float: left;
+  display: block;
+  background-color: #3570D6;
+
+}
+
+.fix a:hover{
+  background-color: #3570D6;
+
+}
+
+.navbar{
+  background-color: #3570D6;
+}
+
+
+#lapak-telu{
+  color: white; 
+  font-family: sans-serif;
+}
+
+#search{
+  width: 350px;
+}
+
+#upload{
+  color: white;
+  text-decoration: none;
+}
+
+#upload{
+  padding-inline: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#masuk{
+  padding-inline: 30px;
+  color: #3570D6;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.nav-pills {
+  background-color:  rgba!important;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    font-family:  'Poppins', sans-serif !important;
+    font-size: 24px !important;
+  
+  }
+  
+  html {
+    height: -webkit-fill-available;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .d-grid {
+    margin-top: 10%;
+  }
+
+.nav-item {
+  margin-top: 13%;
+}
+
+h2 {
+  font-weight: bold;
+}
+
